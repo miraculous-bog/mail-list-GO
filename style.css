@@ -15,8 +15,8 @@
 }
 @font-face {
 	font-family: 'ProbaPro';
-	src: url('./fonts/ProbaPro-MediumItalic.eot');
-	src: local('☺'), url('./fonts/ProbaPro-MediumItalic.woff') format('woff'), url('./fonts/ProbaPro-MediumItalic.ttf') format('truetype'), url('./fonts/ProbaPro-MediumItalic.svg') format('svg');
+	src: url('https://raw.githubusercontent.com/miraculous-bog/mail-list-GO/main/fonts/ProbaPro-MediumItalic.eot');
+	src: local('☺'), url('https://raw.githubusercontent.com/miraculous-bog/mail-list-GO/main/fonts/ProbaPro-MediumItalic.woff') format('woff'), url('https://raw.githubusercontent.com/miraculous-bog/mail-list-GO/main/fonts/ProbaPro-MediumItalic.ttf') format('truetype'), url('https://raw.githubusercontent.com/miraculous-bog/mail-list-GO/main/fonts/ProbaPro-MediumItalic.svg') format('svg');
 	font-weight: 500;
 	font-style: 'italic';
 }
@@ -127,6 +127,7 @@
 	width: 100%;
 	border-spacing: 20px;
 	border-collapse: separate;
+	/* padding: 10px; */
 }
 
 
@@ -136,10 +137,13 @@
 	background-color: #4fa0cb;
 	color: #fff;
 	font-weight: 600;
-	padding: 10px;
+	padding: 25px;
 }
 .adv__element img{
 	max-width: 100%;
+	width: 150px;
+	display: inline-block;
+	margin: 5px;
 }
 .adv__element-title {
 	font-size: 12px;
@@ -153,12 +157,25 @@
 	margin-top: 5px;
 	font-weight: 500;
 }
-@media (max-width: 588px) {
+
+@media (max-width: 430px) {
 	.adv__element {
-		colspan: 3;
+		max-width: 100%;
+		width: 100%;
+		 background-color: white;
+		/*color: #fff;
+		font-weight: 600;
+		padding: 25px; */
+	}
+	.adv__element img{
+		max-width: 120%;
+		width: 250px;
+		height: 250px;
+		display: block;
+		margin:0 auto;
+		padding: 10px;
 	}
 }
-
 /*main-slide*/
 
 .main-slide {
@@ -186,9 +203,7 @@
 	color: white;
 	padding: 10px 10px 20px 10px;
 }
-.adv__element img{
-	width: 150px;
-}
+
 
 .main-slide__content-cell h2 {
 	font-size: 18px;

@@ -26,8 +26,8 @@
 
 		@font-face {
 			font-family: 'ProbaPro';
-			src: url('./fonts/ProbaPro-MediumItalic.eot');
-			src: local('☺'), url('./fonts/ProbaPro-MediumItalic.woff') format('woff'), url('./fonts/ProbaPro-MediumItalic.ttf') format('truetype'), url('./fonts/ProbaPro-MediumItalic.svg') format('svg');
+			src: url('https://raw.githubusercontent.com/miraculous-bog/mail-list-GO/main/fonts/ProbaPro-MediumItalic.eot');
+			src: local('☺'), url('https://raw.githubusercontent.com/miraculous-bog/mail-list-GO/main/fonts/ProbaPro-MediumItalic.woff') format('woff'), url('https://raw.githubusercontent.com/miraculous-bog/mail-list-GO/main/fonts/ProbaPro-MediumItalic.ttf') format('truetype'), url('https://raw.githubusercontent.com/miraculous-bog/mail-list-GO/main/fonts/ProbaPro-MediumItalic.svg') format('svg');
 			font-weight: 500;
 			font-style: 'italic';
 		}
@@ -148,6 +148,7 @@
 			width: 100%;
 			border-spacing: 20px;
 			border-collapse: separate;
+			/* padding: 10px; */
 		}
 
 
@@ -157,11 +158,14 @@
 			background-color: #4fa0cb;
 			color: #fff;
 			font-weight: 600;
-			padding: 10px;
+			padding: 25px;
 		}
 
 		.adv__element img {
 			max-width: 100%;
+			width: 150px;
+			display: inline-block;
+			margin: 5px;
 		}
 
 		.adv__element-title {
@@ -178,9 +182,23 @@
 			font-weight: 500;
 		}
 
-		@media (max-width: 588px) {
+		@media (max-width: 430px) {
 			.adv__element {
-				colspan: 3;
+				max-width: 100%;
+				width: 100%;
+				background-color: white;
+				/*color: #fff;
+		font-weight: 600;
+		padding: 25px; */
+			}
+
+			.adv__element img {
+				max-width: 120%;
+				width: 250px;
+				height: 250px;
+				display: block;
+				margin: 0 auto;
+				padding: 10px;
 			}
 		}
 
@@ -214,9 +232,6 @@
 			padding: 10px 10px 20px 10px;
 		}
 
-		.adv__element img {
-			width: 150px;
-		}
 
 		.main-slide__content-cell h2 {
 			font-size: 18px;
@@ -537,36 +552,18 @@
 						<tbody>
 							<tr>
 								<td class="adv__element">
-									<img src="https://raw.githubusercontent.com/miraculous-bog/mail-list-GO/main/img/1.png"
-										alt="img">
-								</td>
+									<img src="img/1.png" alt="img1">
+									<!-- </td> -->
 
-								<td class="adv__element">
-									<img src="https://raw.githubusercontent.com/miraculous-bog/mail-list-GO/main/img/2.png"
-										alt="">
-								</td>
+									<!-- <td class="adv__element"> -->
+									<img src="img/2.png" alt="img2">
+									<!-- </td> -->
 
-								<td class="adv__element">
-									<img src="https://raw.githubusercontent.com/miraculous-bog/mail-list-GO/main/img/3.png"
-										alt="">
+									<!-- <td class="adv__element"> -->
+									<img src="img/3.png" alt="img3">
 								</td>
 							</tr>
-							<tr>
-								<td class="adv__element">
-									<img src="https://raw.githubusercontent.com/miraculous-bog/mail-list-GO/main/img/4.png"
-										alt="img">
-								</td>
 
-								<td class="adv__element">
-									<img src="https://raw.githubusercontent.com/miraculous-bog/mail-list-GO/main/img/5.png"
-										alt="">
-								</td>
-
-								<td class="adv__element">
-									<img src="https://raw.githubusercontent.com/miraculous-bog/mail-list-GO/main/img/6.png"
-										alt="">
-								</td>
-							</tr>
 						</tbody>
 					</table>
 				</td>
@@ -583,7 +580,7 @@
 
 								<td class="victory__text">
 									<p>
-										Ваша картка <br><span>visa by global ukraine</span><br> закодована на перемогу !
+										Ваша картка <br><span>Visa by Global Ukraine</span><br> закодована на перемогу !
 									</p>
 								</td>
 							</tr>
