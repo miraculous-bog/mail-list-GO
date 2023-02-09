@@ -1,0 +1,819 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=600">
+  <!-- <link rel="stylesheet" href="inline-index.css"> -->
+  <title>Document</title>
+  <style>
+    @font-face {
+      font-family: 'ProbaPro';
+      src: url('https://raw.githubusercontent.com/miraculous-bog/mail-list-GO/main/fonts/ProbaPro-Regular.eot');
+      src: local('☺'), url('https://raw.githubusercontent.com/miraculous-bog/mail-list-GO/main/fonts/ProbaPro-Regular.woff') format('woff'), url('https://raw.githubusercontent.com/miraculous-bog/mail-list-GO/main/fonts/ProbaPro-Regular.ttf') format('truetype'), url('https://raw.githubusercontent.com/miraculous-bog/mail-list-GO/main/fonts/ProbaPro-Regular.svg') format('svg');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    @font-face {
+      font-family: 'ProbaPro';
+      src: url('https://raw.githubusercontent.com/miraculous-bog/mail-list-GO/main/fonts/ProbaPro-SemiBold.eot');
+      src: local('☺'), url('https://raw.githubusercontent.com/miraculous-bog/mail-list-GO/main/fonts/ProbaPro-SemiBold.woff') format('woff'), url('https://raw.githubusercontent.com/miraculous-bog/mail-list-GO/main/fonts/ProbaPro-SemiBold.ttf') format('truetype'), url('https://raw.githubusercontent.com/miraculous-bog/mail-list-GO/main/fonts/ProbaPro-SemiBold.svg') format('svg');
+      font-weight: 600;
+      font-style: normal;
+    }
+
+    @font-face {
+      font-family: 'ProbaPro';
+      src: url('https://raw.githubusercontent.com/miraculous-bog/mail-list-GO/main/fonts/ProbaPro-MediumItalic.eot');
+      src: local('☺'), url('https://raw.githubusercontent.com/miraculous-bog/mail-list-GO/main/fonts/ProbaPro-MediumItalic.woff') format('woff'), url('https://raw.githubusercontent.com/miraculous-bog/mail-list-GO/main/fonts/ProbaPro-MediumItalic.ttf') format('truetype'), url('https://raw.githubusercontent.com/miraculous-bog/mail-list-GO/main/fonts/ProbaPro-MediumItalic.svg') format('svg');
+      font-weight: 500;
+      font-style: 'italic';
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'ProbaPro';
+    }
+
+    /* body { */
+    /* width: 600px; */
+    /* } */
+    .main {
+      max-width: 580px;
+      width: 90%;
+      margin: 0 auto;
+      border-spacing: 0px;
+      border-collapse: collapse;
+    }
+
+    .header {
+      width: 100%;
+      background-color: #31547f;
+    }
+
+    .header__flex {
+      width: 100%;
+      text-align: center;
+      color: #fff;
+      line-height: 2em;
+      font-size: 13px;
+    }
+
+    .header__flex h1 {
+      padding: 10px 50px;
+    }
+
+    .header-logo {
+      max-width: 100px;
+    }
+
+    /*action*/
+    .action {
+      width: 100%;
+      margin: 0;
+
+    }
+
+    .action__flex {
+      border-spacing: 0px;
+      border-collapse: collapse;
+      width: 100%;
+      text-align: center;
+      line-height: 1.2em;
+      border-top: 2px solid #31547f;
+    }
+
+    .action__text {
+      font-size: 13px;
+      color: #31547f;
+      line-height: 2em;
+    }
+
+    .action__left,
+    .action__right {
+      width: 10%;
+    }
+
+    .action__left-img {
+      width: 70px;
+    }
+
+    .action__right-img {
+      width: 70px;
+      margin-bottom: 150px;
+    }
+
+    .action__link {
+      width: 130px;
+      height: 46px;
+    }
+
+    .action__action {
+      font-size: 23px;
+      font-weight: 600;
+      color: #55317f;
+      padding: 15px 0;
+    }
+
+
+    /*adv*/
+    .adv {
+      width: 100%;
+      margin: 0;
+    }
+
+    .adv__flex {
+      width: 100%;
+    }
+
+
+    .adv__element {
+      max-width: 100%;
+      width: 100%;
+      color: #fff;
+      font-weight: 600;
+
+    }
+
+    .adv__element img {
+      max-width: 165px;
+      min-width: 125px;
+      display: inline-block;
+      margin: 10px;
+    }
+
+    .adv__element-title {
+      font-size: 12px;
+      color: #fff;
+      font-weight: 600;
+    }
+
+    .adv__element-list,
+    .adv__element-text {
+      font-size: 10px;
+      color: #fff;
+      margin-top: 5px;
+      font-weight: 500;
+    }
+
+    /*adv-----------------s*/
+    .adv-s {
+      width: 100%;
+      margin: 0;
+    }
+
+    .adv-s__flex {
+      width: 100%;
+      border-spacing: 20px;
+      border-collapse: separate;
+    }
+
+
+    .adv-s__element {
+      width: 100px;
+
+      color: #fff;
+      font-weight: 600;
+      /* width: 100%; */
+      padding: 10px;
+      background-color: #4fa0cb;
+    }
+
+    /* .adv-s__element img {
+	max-width: 165px;
+	min-width: 125px;
+	display: inline-block;
+	margin: 10px;
+  } */
+
+    .adv-s__element-title {
+      font-size: 12px;
+      color: #fff;
+      font-weight: 600;
+    }
+
+    .adv-s__element-list,
+    .adv-s__element-text {
+      font-size: 10px;
+      color: #fff;
+      margin-top: 5px;
+      font-weight: 500;
+    }
+
+
+    /*main-slide*/
+
+    .main-slide {
+      width: 100%;
+      background-color: #ffcb05;
+
+    }
+
+    .main-slide__flex {
+      width: 100%;
+      padding: 7px 20px 7px 40px;
+    }
+
+    .main-slide__img-cell {
+      width: 20%;
+    }
+
+    .main-slide-img {
+      width: 175px;
+    }
+
+    .main-slide__content-cell {
+      width: 80%;
+      background-color: #4fa0cb;
+      border-radius: 10px;
+      text-align: center;
+      color: white;
+      padding: 10px 10px 20px 10px;
+    }
+
+
+    .main-slide__content-cell h2 {
+      font-size: 18px;
+      margin-top: 5px;
+      font-weight: 600;
+      line-height: 1.3em;
+    }
+
+    .main-slide__content-cell p {
+      line-height: 1.2em;
+      padding: 20px 0;
+    }
+
+    .main-slide-btn {
+      background-color: #ffcb05;
+      padding: 5px 10px;
+      color: white;
+      text-transform: uppercase;
+      text-decoration: none;
+      font-weight: 600;
+      border-radius: 10px;
+      border: 2px solid white;
+
+    }
+
+
+    /*victory*/
+    .victory,
+    .victory__flex {
+      width: 100%;
+      padding: 10px 0 15px 0;
+    }
+
+    .victory__logo {
+      width: 40%;
+    }
+
+    .victory__text {
+      width: 60%;
+    }
+
+    .victory__logo img {
+      width: 88px;
+      display: block;
+      margin: 0 50%;
+    }
+
+    .victory__text p {
+      text-align: left;
+      line-height: 1em;
+      color: #31547f;
+      font-style: "italic";
+      font-size: 20px;
+    }
+
+    .victory__text span {
+      /* text-transform: uppercase; */
+      /* padding-top: 5px; */
+      font-weight: 600;
+    }
+
+    /*footer*/
+    .footer {
+      width: 100%;
+    }
+
+    .footer__flex {
+      width: 100%;
+      background-color: #31547f;
+      padding: 20px;
+
+    }
+
+    .footer__left {
+      width: 50%;
+    }
+
+    .footer__right {
+      width: 50%;
+    }
+
+    .footer__left table {
+      width: 100%;
+    }
+
+    .footer__right table {
+      width: 100%;
+    }
+
+    .footer__title {
+      width: 100%;
+      font-size: 20px;
+      text-align: left;
+      color: #fff;
+
+    }
+
+    .footer__marketplace {
+      padding: 20px 0;
+    }
+
+    .footer__marketplace img {
+      width: 110px;
+      height: 39px;
+      display: inline-block;
+      margin: 0 auto;
+    }
+
+    .footer__icons {
+      width: 65px;
+    }
+
+    .footer__icons-icon {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      padding: 5px;
+      background-color: #fff;
+    }
+
+    .footer__text {
+      color: #fff;
+      text-align: center;
+      padding: 0 20px;
+      font-size: 12px;
+      text-align: left;
+      border-left: 2px solid white;
+    }
+
+    @media (max-width: 430px) {
+      .adv__element {
+        max-width: 100%;
+        width: 100%;
+        background-color: white;
+
+      }
+
+      .adv__element img {
+        max-width: 120%;
+        width: 250px;
+        height: 250px;
+        display: block;
+        margin: 0 auto;
+        padding: 10px;
+      }
+    }
+
+    @media (max-width: 490px) {
+
+      .main-slide__img-cell {
+        display: none;
+      }
+
+      .main-slide-img {
+        margin: 0 auto;
+        display: block;
+      }
+
+      .main-slide__img-cell-mobile {
+        display: block;
+      }
+    }
+
+    @media (min-width: 490px) {
+      .main-slide__img-cell-mobile {
+        display: none;
+      }
+    }
+
+    @media (max-width: 460px) {
+      .victory__logo img {
+
+        margin: 0 10%;
+      }
+
+      .victory__logo {
+        width: 30%;
+      }
+
+      .victory__text {
+        width: 60%;
+      }
+    }
+
+    @media (max-width: 420px) {
+      .main-slide__flex {
+        width: 100%;
+        padding: 5px 5px 5px 5px;
+      }
+
+      .main-slide__img-cell {
+        display: none;
+      }
+
+      .main-slide__content-cell {
+        width: 85%;
+        padding: 5px 5px 10px 5px;
+      }
+
+      .main-slide__img-cell-mobile {
+        display: block;
+      }
+    }
+
+    @media (max-width: 420px) {
+      .header__flex h1 {
+        padding: 10px 0px;
+        line-height: 1.3em;
+        /* font-size: 12px; */
+      }
+
+      .header__flex {
+        font-size: 10px;
+      }
+    }
+
+    @media (max-width: 420px) {
+      .action__text {
+        font-size: 12px;
+        color: #31547f;
+        line-height: 1.5em;
+      }
+
+      .action__right-img {
+        margin-bottom: 100px;
+      }
+    }
+
+    @media (max-width: 400px) {
+      .footer__flex {
+        padding: 5px;
+      }
+
+    }
+
+    @media (max-width: 517px) {
+      .footer__marketplace img {
+        width: 90px;
+        height: 30px;
+        display: inline-block;
+        margin: 0 auto;
+      }
+
+      .footer__text {
+        padding: 0 10px;
+        font-size: 10px;
+
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <table class="main">
+    <tbody>
+      <tr class="header">
+
+        <td>
+          <table class="header__flex">
+            <tbody>
+              <tr>
+                <td>
+                  <img class="header-logo"
+                    src="https://raw.githubusercontent.com/miraculous-bog/mail-list-GO/main/img_edited/logo.png"
+                    alt="logo">
+                </td>
+                <td>
+                  <h1>
+                    Ваш Євро рахунок в Європі принесе Вашому бізнесу європейську фінансову безпеку
+                  </h1>
+                </td>
+              </tr>
+
+            </tbody>
+          </table>
+        </td>
+      </tr>
+
+
+      <tr class="action">
+        <td>
+          <table class="action__flex">
+            <tbody>
+              <tr>
+                <td class="action__left">
+                  <img class="action__left-img"
+                    src="https://raw.githubusercontent.com/miraculous-bog/mail-list-GO/main/img_edited/left-img-ms.png"
+                    alt="logo">
+                </td>
+                <td class="action__text">
+                  <h2>
+                    Забудьте про конверсії та обмеження національних банків - користуйтеся
+                    європейським
+                    рахунком та картками VISA від необанку Global Ukraine !
+                  </h2>
+                </td>
+                <td class="action__right">
+                  <img class="action__right-img"
+                    src="https://raw.githubusercontent.com/miraculous-bog/mail-list-GO/main/img_edited/right-img-ms.png"
+                    alt="logo">
+                </td>
+              </tr>
+              <tr>
+                <td colspan="3">
+                  <a href="https://play.google.com/store/apps/details?id=com.linkcy_globalukraine" target="_blank">
+                    <img class="action__link"
+                      src="https://raw.githubusercontent.com/miraculous-bog/mail-list-GO/main/img_edited/google-play-badge.png"
+                      alt="android-store">
+                  </a>
+                  <a href="https://apps.apple.com/ua/app/global-ukraine-card/id1644881416?l=uk" target="_blank">
+                    <img class="action__link"
+                      src="https://raw.githubusercontent.com/miraculous-bog/mail-list-GO/main/img_edited/apple-store-badge.png"
+                      alt="apple-store">
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td colspan="3">
+                  <p class="action__action">
+                    Зареєструйтеся вже зараз!
+                  </p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+
+      <tr class="main-slide">
+        <td>
+          <table class="main-slide__flex">
+            <tbody>
+              <!-- <tr>
+								<td class="main-slide__img-cell-mobile">
+									<img class="main-slide-img"
+										src="https://raw.githubusercontent.com/miraculous-bog/mail-list-GO/main/img/main-slide-img.png"
+										alt="logo">
+								</td>
+							</tr> -->
+              <tr>
+                <td class="main-slide__img-cell">
+                  <img class="main-slide-img"
+                    src="https://raw.githubusercontent.com/miraculous-bog/mail-list-GO/main/img_edited/main-slide-img.png"
+                    alt="logo">
+                </td>
+                <td class="main-slide__content-cell">
+                  <h2>
+                    Унікальний банківський додаток для українців та українських ФОП-ах, які
+                    знаходяться в ЄС та / або працюють з міжнародними партнерами
+                  </h2>
+                  <p>Швидка реєстрація онлайн на основі українських документів, спонтанне відкриття
+                    віртуальної картки, доставка фізичної картки поштою на вказану Вами європейську
+                    адресу, підтримка українською мовою - євро рахунок для міжнародної діяльності
+                    без головного болю !</p>
+                  <a class="main-slide-btn" href="https://global-ukraine-card.com/fop1/#ua">дізнатися
+                    більше</a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+
+
+      <tr class="adv">
+        <td>
+          <table class="adv__flex">
+            <tbody>
+              <tr>
+                <td class="adv__element">
+                  <img src="https://raw.githubusercontent.com/miraculous-bog/mail-list-GO/main/img_edited/1.png"
+                    alt="img1">
+
+
+
+                  <img src="https://raw.githubusercontent.com/miraculous-bog/mail-list-GO/main/img_edited/2.png"
+                    alt="img2">
+
+
+
+                  <img src="https://raw.githubusercontent.com/miraculous-bog/mail-list-GO/main/img_edited/3.png"
+                    alt="img3">
+                </td>
+              </tr>
+
+            </tbody>
+          </table>
+        </td>
+      </tr>
+      <tr class="adv-s">
+        <td>
+          <table class="adv-s__flex">
+            <tbody>
+              <tr>
+                <td class="adv-s__element">
+                  <h1 class="adv-s__element-title">
+                    Глобальні БЕЗКОШТОВНІ та ГЛОБАЛЬНІ перекази
+                  </h1>
+                  <p class="adv-s__element-text">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.<br> Eos aspernatur veritatis ipsa
+                    architecto consequuntur delectus eligendi harum, dignissimos accusamus unde libero, praesentium
+                    quam.<br> Exercitationem asperiores dolore iusto. Qui, eos ullam.
+                  </p>
+                </td>
+
+                <td class="adv-s__element">
+                  <h1 class="adv-s__element-title">
+                    Глобальні БЕЗКОШТОВНІ та ГЛОБАЛЬНІ перекази
+                  </h1>
+                  <p class="adv-s__element-text">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.<br> Eos aspernatur veritatis ipsa
+                    architecto consequuntur delectus eligendi harum, dignissimos accusamus unde libero, praesentium
+                    quam.<br> Exercitationem asperiores dolore iusto. Qui, eos ullam.
+                  </p>
+                </td>
+
+                <td class="adv-s__element">
+                  <h1 class="adv-s__element-title">
+                    Глобальні БЕЗКОШТОВНІ та ГЛОБАЛЬНІ перекази
+                  </h1>
+                  <p class="adv-s__element-text">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.<br> Eos aspernatur veritatis ipsa
+                    architecto consequuntur delectus eligendi harum, dignissimos accusamus unde libero, praesentium
+                    quam.<br> Exercitationem asperiores dolore iusto. Qui, eos ullam.
+                  </p>
+                </td>
+              </tr>
+
+            </tbody>
+          </table>
+        </td>
+      </tr>
+      <tr class="victory">
+        <td>
+          <table class="victory__flex">
+            <tbody>
+              <tr>
+                <td class="victory__logo">
+                  <img src="https://raw.githubusercontent.com/miraculous-bog/mail-list-GO/main/img_edited/ornament.png"
+                    alt="victory">
+                </td>
+
+                <td class="victory__text">
+                  <p>
+                    Ваша картка <br><span>Visa by Global Ukraine</span><br> закодована на перемогу !
+                  </p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+      <tr class="footer">
+        <td>
+          <table class="footer__flex">
+            <tbody>
+              <tr>
+                <td class="footer__left">
+                  <table>
+                    <tbody>
+                      <tr>
+                        <td>
+                          <h3 class="footer__title">GLOBAL UKRAINE CARD
+                            Гарантія Вашої фінансової безпеки !</h3>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="footer__marketplace" colspan="8">
+                          <a href="https://play.google.com/store/apps/details?id=com.linkcy_globalukraine"
+                            target="_blank">
+                            <img
+                              src="https://raw.githubusercontent.com/miraculous-bog/mail-list-GO/main/img_edited/google-play-badge.png"
+                              alt="android-store">
+                          </a>
+                          <a href="https://apps.apple.com/ua/app/global-ukraine-card/id1644881416?l=uk" target="_blank">
+                            <img
+                              src="https://raw.githubusercontent.com/miraculous-bog/mail-list-GO/main/img_edited/apple-store-badge.png"
+                              alt="apple-store">
+                          </a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="footer__icons">
+                          <a href="https://www.facebook.com/GlobalUkraineFoundation">
+                            <img class="footer__icons-icon"
+                              src="https://raw.githubusercontent.com/miraculous-bog/mail-list-GO/main/img_edited/facebook.png"
+                              alt="facebook">
+                          </a>
+
+
+                          <a
+                            href="https://twitter.com/GlobalUA?fbclid=IwAR0TxBJMLBrWPrCfZCfJ5r45WaQCuM9AUTK-Zi2PFsWSVutqNgUXdq2_gKY">
+                            <img class="footer__icons-icon"
+                              src="https://raw.githubusercontent.com/miraculous-bog/mail-list-GO/main/img_edited/twiter.png"
+                              alt="twiter">
+                          </a>
+
+
+                          <a
+                            href="https://www.instagram.com/globalukraine/?fbclid=IwAR27L29mzb6L9waqSc9TebAfcbttoH6CAVBHXNOML3eEXoX_q9BW6eXjNs4">
+                            <img class="footer__icons-icon"
+                              src="https://raw.githubusercontent.com/miraculous-bog/mail-list-GO/main/img_edited/instagram.png"
+                              alt="instagram">
+                          </a>
+
+
+                          <a
+                            href="https://www.tiktok.com/@globalukraine?fbclid=IwAR1LxkbtbaUnRQ3b6tcoCq3k37el9vo3VE1sEhl1dBJz-zQf9f8ZkFHt-GQ">
+                            <img class="footer__icons-icon"
+                              src="https://raw.githubusercontent.com/miraculous-bog/mail-list-GO/main/img_edited/tik-tok.png"
+                              alt="tik-tok">
+                          </a>
+
+
+                          <a href="https://t.me/globalukrainenews">
+                            <img class="footer__icons-icon"
+                              src="https://raw.githubusercontent.com/miraculous-bog/mail-list-GO/main/img_edited/telegram.png"
+                              alt="telegram">
+                          </a>
+
+
+                          <a href="https://www.linkedin.com/company/global-ukraine/">
+                            <img class="footer__icons-icon"
+                              src="https://raw.githubusercontent.com/miraculous-bog/mail-list-GO/main/img_edited/linkedin.png"
+                              alt="linkedin">
+                          </a>
+
+
+                          <a href="https://www.youtube.com/Global Ukraine">
+                            <img class="footer__icons-icon"
+                              src="https://raw.githubusercontent.com/miraculous-bog/mail-list-GO/main/img_edited/youtube.png"
+                              alt="youtube">
+                          </a>
+
+
+                          <a href="https://global-ukraine-card.com/fop1/#ua">
+                            <img class="footer__icons-icon"
+                              src="https://raw.githubusercontent.com/miraculous-bog/mail-list-GO/main/img_edited/link.png"
+                              alt="link">
+                          </a>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+                <td class="footer__right">
+                  <table>
+                    <tbody>
+                      <tr rowspan="3">
+
+                        <td class="footer__text">
+                          <p>Рахунок та картки Global Ukraine випускаються UAB PayrNet на
+                            підставі ліцензії
+                            VISA
+                            та управляються UAB LinkCy. UAB PayrNet уповноважено Банком
+                            Литви відповідно до
+                            Закону про електронні гроші та установи електронних грошей (ref
+                            LB001994) для
+                            випуску електронних грошей і надання відповідних платіжних
+                            послуг. UAB LinkCy є
+                            агентом UAB PayrNet, зареєстрованого в Банку Литви під номером
+                            305756549.
+                            Усі кошти, внесені нашими клієнтами, захищені відповідно до
+                            чинних європейських
+                            норм, у розмірі до 100 000 євро на установу та на кожного
+                            клієнта.</p>
+                        </td>
+
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+
+</html>
